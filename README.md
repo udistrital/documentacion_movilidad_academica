@@ -61,3 +61,62 @@ Los EndPoints de esta api estan ligada a previa autorización por parte de la of
 * organizacion_crud
 
 Los EndPoints de esta api estan ligada a previa autorización por parte de la oficina asesora de sistemas.
+
+##uso de bash
+
+para los repos de [movilidad_academica_crud](https://github.com/udistrital/movilidad_academica_crud) , 
+[convenios_crud](https://github.com/udistrital/convenios_crud) , [movilidad_academica_mid](https://github.com/udistrital/movilidad_academica_mid). se ha modificado de tal manera que lo ue se use para su ejecucion no sea directamente el comando `bee run` .
+
+Esto con el fin de poder cambiarse a conveniencia por desarrollo o despliegue y no generar cambios que a futuro pida un _**commit**_ , este archivo esta en el omitiendose en el git ignore,por esa razon no se subira a los repos al momento de hacer un push.
+
+Para la ejecucion de los Apis se crea un archivo llamado `ejec.sh` en este estan las sentencias para la correcta ejecucion del api.
+
+--- 
+### nota
+
+devido a que este repo puede ser clonado en cualquier directorio de su ordenador , se recomeinda dejar el archivo `crea_ceri.sh` en el directorio 
+
+```javascript
+${GOPATH}/src
+```
+
+si no sabe cual es su `GOPATH` ejecute:
+
+```javascript
+echo ${GOPATH}
+```
+---
+
+El archivo [bash](./bash/crea_ceri.sh) debe de tener permisos de ejecucion por lo tento ejecutar lo siguiente:
+
+```javascript
+chmod 777 ./crea_ceri.sh
+```
+
+al ejecutarlo en la raiz de cada uno de los repos nombrados anteior mente se creara un archivo con la variables para su ejecucion.
+
+<details>
+<summary>variables del bash</summary>
+En el bash se encuentran la siguientes variables:
+
+- MOVILIDAD_CRUD__PGDB
+    - nombre de la base de datos, este se cambia en caso de que el script sea ejecutado en una base de datos diferente al valor ya seteado en el bash.
+- MOVILIDAD_CRUD__PGPASS
+    - password de la base de datos o conexion.
+- MOVILIDAD_CRUD__PGURLS
+    - url de conexion a la base de datos, en este caso se tiene por defecto localhost, generalmente se puede dejar tal como esta.
+- MOVILIDAD_CRUD__PGUSER
+    - usuario con permisos para la base de datos.
+- MOVILIDAD_HTTP_PORT
+    - puerto de ejecucion el api, por defecto esta el 8080, pero este se puede cambiar a preferencia.
+- MOVILIDAD_CRUD__SCHEMA
+    - esquema de la base de datos a la cual debe apintar el api
+</details>
+
+para levantar el api ejecutar lo siguiente (similar a usar bee run, debe ejecutarse el comando en la raiz de cada repo)
+
+```javascript
+./ejec.sh
+```
+
+si se quieren crear mas archivos `ejec.sh ` es recomendable crear eso en el archivo [crea_ceri.sh](./bash/crea_ceri.sh)
