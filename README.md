@@ -6,5 +6,7 @@ Esta documentación concentra toda la documentación requerida para enteder el p
 ## Comenzando 🚀
 La arquitectura de la aplicacion desarrollada se expone en la siguiente imagen.
 
-### Pre-requisitos 📋
+![](ArquitecturaCERI.png)
 
+
+### Pre-requisitos 📋
