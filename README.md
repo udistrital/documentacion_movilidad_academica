@@ -10,3 +10,12 @@ La arquitectura de la aplicacion desarrollada se expone en la siguiente imagen.
 
 
 ### Pre-requisitos 📋
+
+Para el correcto despliegue del proyecto es necesario contar con las siguientes herramientas:
+
+* [golang](https://golang.org/) - Lenguaje de programación 
+* [Beego](https://beego.me/) - Framework  usado
+* [PgModeles](https://pgmodeler.io/) - PostgreSQL Database Modeler
+* [PgAdmin3](https://www.pgadmin.org/) - Motor para bases de datos
+* [Angular](https://angular.io/) - Framework FrontEnd
+
