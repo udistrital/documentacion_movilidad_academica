@@ -19,3 +19,14 @@ Para el correcto despliegue del proyecto es necesario contar con las siguientes 
 * [PgAdmin3](https://www.pgadmin.org/) - Motor para bases de datos
 * [Angular](https://angular.io/) - Framework FrontEnd
 
+### Instalación 🔧
+
+El proyecto esta compuesto por 6 APIs, 4 desarrollados por el equipo desarrollador ( movilidad_academica_crud,  movilidad_academica_mid, movilidad_academica_cliente y convenios_crud) y dos Servicios desarrollados por otro equipo de la OAS (api_academica y organizacion_crud), los repositorios de cada API se en lista a continuación:
+
+* [movilidad_academica_crud](https://github.com/udistrital/movilidad_academica_crud) - CRUD para  base de datos para los procesos de movilidad academica.
+* [convenios_crud](https://github.com/udistrital/convenios_crud) - CRUD para base de datos de los convenios ofertados por el CERI
+* [movilidad_academica_mid](https://github.com/udistrital/movilidad_academica_mid) - MID encargado de traer los servicios de api_academica y organizacion_crud.
+* [movilidad_academica_cliente](https://github.com/udistrital/movilidad_academica_cliente) - Cliente de la aplicacion creado con el template ngxAdmin.
+* [api_academica](https://github.com/udistrital/api_academica) - API encargada de la información atadas a las personas pertenecientes a la universidad.
+* [organizacion_crud](https://github.com/udistrital/organizacion_crud) - API encargada de la información atadas a las organizaciones que tiene algun vinculo con la universidad.
+
