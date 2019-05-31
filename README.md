@@ -62,7 +62,7 @@ Los EndPoints de esta api estan ligada a previa autorización por parte de la of
 
 Los EndPoints de esta api estan ligada a previa autorización por parte de la oficina asesora de sistemas.
 
-##uso de bash
+## uso de bash
 
 para los repos de [movilidad_academica_crud](https://github.com/udistrital/movilidad_academica_crud) , 
 [convenios_crud](https://github.com/udistrital/convenios_crud) , [movilidad_academica_mid](https://github.com/udistrital/movilidad_academica_mid). se ha modificado de tal manera que lo ue se use para su ejecucion no sea directamente el comando `bee run` .
