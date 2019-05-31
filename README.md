@@ -30,3 +30,34 @@ El proyecto esta compuesto por 6 APIs, 4 desarrollados por el equipo desarrollad
 * [api_academica](https://github.com/udistrital/api_academica) - API encargada de la información atadas a las personas pertenecientes a la universidad.
 * [organizacion_crud](https://github.com/udistrital/organizacion_crud) - API encargada de la información atadas a las organizaciones que tiene algun vinculo con la universidad.
 
+## EndPoinst de las APIs 📦
+
+* movilidad_academica_crud
+
+|                |link de prueba                  |End Point|
+|----------------|-------------------------------|------------------------|
+| **Obtiene datos asociados a la movilidad estudiantil** |[GetAll](http://127.0.0.1:8080/v1/movilidad)| `127.0.0.1:8080/v1/movilidad` |
+| **Obtiene las categorías de movilidad** | [GetAll](http://127.0.0.1:8080/v1/tipo_categoria) |`127.0.0.1:8080/v1/tipo_categoria`|
+| **Obtiene los tipo de movilidad(Extranjera o nacional)** |[GetAll](http://127.0.0.1:8080/v1/tipo_movilidad)| `127.0.0.1:8080/v1/tipo_movilidad` |
+
+* convenios_crud
+
+|                |link de prueba                  |End Point|
+|----------------|-------------------------------|------------------------|
+| **Obtiene datos asociados a los convenios** |[GetAll](http://127.0.0.1:8082/v1/convenio)| `127.0.0.1:8080/v1/convenio` |
+
+* movilidad_academica_mid
+
+|                |link de prueba                  |End Point|
+|----------------|-------------------------------|------------------------|
+| **Obtiene datos asociados a la información academica** | [GetAcademica](http://127.0.0.1:8081/v1/academica/GetAcademica) |`127.0.0.1:8081/v1/academica/GetAcademica`|
+| **Obtiene datos asociados a los convenios** |[GetConvenio](http://127.0.0.1:8081/v1/convenio/GetConvenio)| `127.0.0.1:8081/v1/convenio/GetConvenio` |
+| **Obtiene datos asociados a la movilidad estudiantil** |[GetMovilidad](http://127.0.0.1:8081/v1/movilidad/GetMovilidad)| `127.0.0.1:8081/v1/movilidad/GetMovilidad` |
+
+* api_academica
+
+Los EndPoints de esta api estan ligada a previa autorización por parte de la oficina asesora de sistemas.
+
+* organizacion_crud
+
+Los EndPoints de esta api estan ligada a previa autorización por parte de la oficina asesora de sistemas.
