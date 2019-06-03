@@ -120,3 +120,29 @@ para levantar el api ejecutar lo siguiente (similar a usar bee run, debe ejecuta
 ```
 
 si se quieren crear mas archivos `ejec.sh ` es recomendable crear eso en el archivo [crea_ceri.sh](./bash/crea_ceri.sh)
+
+--- 
+
+### campues en local
+
+ya que se estan usando varias apis de campus como ente, personas, organizaciones, ubicaciones y el mid.
+
+En la carpeta `bash` estan 2 script para usarlos, el script [repos_campus.sh](./bash/repos_campus.sh)  al ejecutarse trae en local todos los apis necesarios para integrar en local la funcionalidad de campus al proyecto CERI.
+
+luego de ello debe de crearse en postgres una base de datos llamada `corev1` ya que este es el nombbre con el cual se conectan las apis de CAMPUS, si se coloca otro nombre distinto a la base de datos se recomienda remplazar la palabra `corev1` en el archivo [crea_campus.sh](./bash/crea_campus.sh) por el nombre de la base de datos que desee colocar.
+
+enseguida de haber creado la base de datos debe ingresar por la terminal en modo administrador y ejecutar el siguiente comando
+
+```javascript
+pg_restore -h localhost -p 5432 -U postgres -d corev1 -v '/[directorio donde se descargo el backup]/campus_2_06_2019.backup' 
+```
+
+el backup se encuentra en una carpeta compartida en drive para los miembros del proyecto CERI.
+
+al terminar de restaurarse la base de datos ya pueden ejecutarse las apis y para su ejecucion un poco mas amena se creo el script [crea_campus.sh](./bash/crea_campus.sh)el cual crea un archivo en cada api que se esta usando de campus, el archivo es creado en la raiz de cada api y ya contiene los parametros exactos para su ejecucion
+
+en la raiz de cada api ejecutar 
+
+```javascript
+./ejec.sh
+```
