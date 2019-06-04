@@ -64,8 +64,8 @@ Los EndPoints de esta api estan ligada a previa autorización por parte de la of
 
 ## uso de bash
 
-para los repos de [movilidad_academica_crud](https://github.com/udistrital/movilidad_academica_crud) , 
-[convenios_crud](https://github.com/udistrital/convenios_crud) , [movilidad_academica_mid](https://github.com/udistrital/movilidad_academica_mid). se ha modificado de tal manera que lo ue se use para su ejecucion no sea directamente el comando `bee run` .
+Para los repos de [movilidad_academica_crud](https://github.com/udistrital/movilidad_academica_crud) , 
+[convenios_crud](https://github.com/udistrital/convenios_crud) , [movilidad_academica_mid](https://github.com/udistrital/movilidad_academica_mid). se ha modificado de tal manera que lo que se use para su ejecucion no sea directamente el comando `bee run` .
 
 Esto con el fin de poder cambiarse a conveniencia por desarrollo o despliegue y no generar cambios que a futuro pida un _**commit**_ , este archivo esta en el omitiendose en el git ignore,por esa razon no se subira a los repos al momento de hacer un push.
 
