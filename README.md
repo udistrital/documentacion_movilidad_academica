@@ -123,7 +123,7 @@ si se quieren crear mas archivos `ejec.sh ` es recomendable crear eso en el arch
 
 --- 
 
-### campues en local
+### Campues en local
 
 ya que se estan usando varias apis de campus como ente, personas, organizaciones, ubicaciones y el mid.
 
