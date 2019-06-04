@@ -32,4 +32,19 @@ Resultados prueba de carga
 |Label       | # Samples    | Average | Min |  Max | Dev. std. | Error % | Throughput | Received KB/sec | Sent KB/sec| Avg.Bytes|
 |------------|--------------|---------|-----|------|-----------|---------|------------|-----------------|------------|----------|
 |HTTP Request|10000         |15789   |15   |176269 | 29895.52| 2.19%   |54.6 /sec   |  37.04          |  7.19      | 695.0   |
-|HTTP Request|10000         |15789   |15   |176269 | 29895.52| 2.19%   |54.6 /sec   |  37.04          |  7.19      | 695.0   |
+|Total|10000         |15789   |15   |176269 | 29895.52| 2.19%   |54.6 /sec   |  37.04          |  7.19      | 695.0   |
+
+### Prueba GET para el EndPoinst movilidad
+
+Los parametros de configuración para la pruebas de cargas son :
+
+|Numero de peticiones  |Periodo Ramp-up en  segundos   |Duración total de peticiones en segundos|
+|----------------------|-------------------------------|----------------------------------------|
+|2000       |1 segundo    |5 segundos|  
+
+Resultados prueba de carga
+
+|Label       | # Samples    | Average | Min |  Max | Dev. std. | Error % | Throughput | Received KB/sec | Sent KB/sec| Avg.Bytes|
+|------------|--------------|---------|-----|------|-----------|---------|------------|-----------------|------------|----------|
+|HTTP Request|10000         |15251   |14   |165699 | 27490.34| 2.02%   |49.6 /sec   |  23.69          |  6.31      | 489.2   |
+|Total|10000         |15251   |14   |165699 | 27490.34| 2.02%   |49.6 /sec   |  23.69          |  6.31      | 489.2   |
