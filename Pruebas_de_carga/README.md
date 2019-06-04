@@ -10,4 +10,11 @@ Los parametros de configuración para la pruebas de cargas son :
 
 |Numero de peticiones  |Periodo Ramp-up en  segundos   |Duración total de peticiones en segundos|
 |----------------------|-------------------------------|----------------------------------------|
-|2000       |1 segundo    |5 segindos|
+|2000       |1 segundo    |5 segundos|  
+
+Resultados prueba de carga
+
+|Label       | # Samples    | Average | Min |  Max | Dev. std. | Error % | Throughput | Received KB/sec | Sent KB/sec| Avg.Bytes|
+|------------|--------------|---------|-----|------|-----------|---------|------------|-----------------|------------|----------|
+|HTTP Request|10000         |15778    |14   |202743 | 28871.12 | 3.01%   |48.8 /sec   |  58.76          |  6.38      | 1232.6   |
+|Total|10000         |15778    |14   |202743 | 28871.12 | 3.01%   |48.8 /sec   |  58.76          |  6.38      | 1232.6   |
