@@ -7,7 +7,7 @@ echo "#!/bin/bash" >>  ./github.com/udistrital/movilidad_academica_mid/ejec.sh
 
 chmod 777 ./github.com/udistrital/movilidad_academica_mid/ejec.sh
 
-echo "MOVILIDAD_MID_HTTP_PORT=8081 MODALIDAD_CRUD=localhost:8080/v1 CONVENIO_CRUD=localhost:8086/v1 bee run" >>  ./github.com/udistrital/movilidad_academica_mid/ejec.sh
+echo "MOVILIDAD_MID_HTTP_PORT=8081 MODALIDAD_CRUD=localhost:8080/v1 CONVENIO_CRUD=localhost:8086/v1 PERSONAS_SERVICE=localhost:8083/v1 ORGANIZACION_SERVICE=localhost:8106/v1 UBICACIONES_SERVICE=localhost:8085/v1 ENTE_SERVICE=localhost:8096/v1 PROGRAMA_ACADEMICO_SERVICE=localhost:8101/v1 CAMPUSMID_SERVICE=localhost:8095/v1 bee run -downdoc=true -gendoc=true" >>  ./github.com/udistrital/movilidad_academica_mid/ejec.sh
 
 echo archivo movilidad_academica_mid creado
 
@@ -45,7 +45,7 @@ chmod 777 ./clear_ceri.sh
 echo "echo borando archivos" >> ./clear_ceri.sh
 
 
-echo "rm ./github.com/udistrital/campus_mid/ejec.sh" >> ./clear_ceri.sh
+echo "rm ./github.com/udistrital/movilidad_academica_mid/ejec.sh" >> ./clear_ceri.sh
 
 echo "rm ./github.com/udistrital/convenios_crud/ejec.sh" >> ./clear_ceri.sh
 
