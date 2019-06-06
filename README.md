@@ -74,7 +74,7 @@ Para la ejecucion de los Apis se crea un archivo llamado `ejec.sh` en este estan
 --- 
 ### nota
 
-devido a que este repo puede ser clonado en cualquier directorio de su ordenador , se recomeinda dejar el archivo `crea_ceri.sh` en el directorio 
+Debido a que este repo puede ser clonado en cualquier directorio de su ordenador , se recomeinda dejar el archivo `crea_ceri.sh` en el directorio 
 
 ```javascript
 ${GOPATH}/src
