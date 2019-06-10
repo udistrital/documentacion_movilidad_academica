@@ -40,3 +40,6 @@ Luego al darle play
 
 se  obtiene que se realizaron 10000 solicitudes y tuvieron un porcentaje de error de 8.86%
 
+### Grafias de resultados - JMeter
+
+Para realizar las revisar los resultados de forma gráfica con JMeter se utiliza el mismo procedimiento anterior, solo que al final, no se utiliza el listener "Summary Report"
