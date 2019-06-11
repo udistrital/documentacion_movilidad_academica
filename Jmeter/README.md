@@ -40,3 +40,17 @@ Luego al darle play
 
 se  obtiene que se realizaron 10000 solicitudes y tuvieron un porcentaje de error de 8.86%
 
+### Graficas de resultados - JMeter
+
+Para realizar las revisar los resultados de forma gráfica con JMeter se utiliza el mismo procedimiento anterior, solo que al final, no se utiliza el listener "Summary Report" en cambio se utiliza el listener "Graph Results" como se muestra a continuación:
+
+![14](./14.png)
+
+Luego al darle play se observan los resultados: 
+
+![15](./15.png)
+
+En la gráfica los puntos negros representan el tiempo de respuesta de cada petición y en verde el Throughput del sistema. Además, en ella se puede configurar si se requiere algunos datos de más como lo son el tiempo medio de respuesta, la mediana y la desviación. Datos que son iguales a los que se representan con el listener "Summary Report".
+
+
+
